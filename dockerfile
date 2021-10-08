@@ -1,7 +1,7 @@
 FROM node:15 
-WORKDIR /MintingMS
-COPY package.json . /MintingMS/
+WORKDIR /ROOTFOLDER
+COPY package.json . /ROOTFOLDER/
 RUN npm install 
-COPY . /MintingMS/
+COPY . /ROOTFOLDER/
 EXPOSE 3005
-CMD ["node", "babyTest.js"]
+CMD ["node", "server.js"]
