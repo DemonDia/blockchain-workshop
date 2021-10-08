@@ -1,11 +1,11 @@
 {
-  "name": "OIO",
-  "version": "0.0.2",
-  "description": "NFT",
+  "name": "workshop",
+  "version": "0.0.3",
+  "description": "workshop",
   "scripts": {
-    "start": "nodemon simulation.js && keys.js && babyTest.js",
+    "start": "nodemon simulation.js && keys.js && server.js",
     "test": "truffle test test/*",
-    "dev": "concurrently \"npm:simulation.js\" \"npm:keys.js\" \"npm:babyTest.js\""
+    "dev": "concurrently \"npm:simulation.js\" \"npm:keys.js\" \"npm:server.js\""
   },
   "author": "Er Soon Hao & Brayden Leo",
   "license": "MIT",
