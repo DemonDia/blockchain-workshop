@@ -53,9 +53,9 @@ var demo = async() => {
     let nonce = await web3.eth.getTransactionCount(wallet_address);
     
   
-    var gas = await MyWalletContract.methods.receiveMoney().estimateGas({ from: wallet_address , value: web3.utils.toWei("0.5","ether") });
+    // var gas = await MyWalletContract.methods.receiveMoney().estimateGas({ from: wallet_address , value: web3.utils.toWei("0.5","ether") });
     // var gas = await tx.estimateGas({from: wallet_address});
-    // var gas = await web3.eth.estimateGas({to: minting_contract_addr, data: data});
+    var gas = await web3.eth.estimateGas({to: wallet_contract_addr, data: data});
     console.log("GAS HERE:",gas);
     if (gas<30000){
         // this is a dirty method.
