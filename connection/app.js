@@ -19,7 +19,7 @@ module.exports = {
         return;
       }
 
-      if (accs.length == 0) {
+      if (accs.length == 0) { 
         console.log("Couldn't get any accounts! Make sure your Ethereum client is configured correctly.");
         return;
       }
